@@ -1,0 +1,35 @@
+in SudokuSolver, add nullable properties AnnotatedGrid and Sudoku
+
+
+solving methods:
+1. find cell with a single note:
+private bool findSingleCellNote()
+// For each cell
+	// If one note on cell
+		// insertValue(row, col, note)
+		// return true
+// return false
+
+private void insertValue(row, col, value)
+// Insert value into cell in Sudoku.Grid
+// Clear cell notes in AnnotatedGrid
+// remove note from cell groups
+
+2. find group with a lone note:
+private bool findLoneGroupNote()
+// For each group
+	// Create dictionary to keep count of each note
+	// For each cell in group
+		// For each note on cell
+			// increment note count in dict
+	// For each note in dict
+		// If note count == 1
+			// For each cell in group
+				// If cell contains note
+					// "
+					// insertValue(row, col, note)
+					// return true
+// return false
+
+3. 
+
